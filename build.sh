@@ -42,7 +42,7 @@ function showHelpAndExit {
         echo -e "${CLR_BLD_BLU}  -m, --module          Build a specific module${CLR_RST}"
         echo -e "${CLR_BLD_BLU}  -s, --sign-keys       Specify path to sign key mappings${CLR_RST}"
         echo -e "${CLR_BLD_BLU}  -p, --pwfile          Specify path to sign key password file${CLR_RST}"
-        echo -e "${CLR_BLD_BLU}  -b, --backup-unsigned Store a copy of unsignied package along with signed${CLR_RST}"
+        echo -e "${CLR_BLD_BLU}  -b, --backup-unsigned Store a copy of unsigned package along with signed${CLR_RST}"
         echo -e "${CLR_BLD_BLU}  -d, --delta           Generate a delta ota from the specified target_files zip${CLR_RST}"
         echo -e "${CLR_BLD_BLU}  -z, --imgzip          Generate fastboot flashable image zip from signed target_files${CLR_RST}"
         echo -e "${CLR_BLD_BLU}  -n, --version         Specify build minor version (number)${CLR_RST}"
@@ -119,11 +119,11 @@ fi
 
 # Setup AOSPA version if specified
 if [ $AOSPA_USER_VERSION ]; then
-    # Check is it a number
-    if [ ! -z "${AOSPA_USER_VERSION##*[!0-9]*}" ]; then
-        export AOSPA_BUILDVERSION=${AOSPA_USER_VERSION}
+    # Check if it is a number
+    if [[ $AOSPA_USER_VERSION =~ ^[0-9]+(\.[0-9]+)?$ ]]; then
+        export AOSPA_BUILDVERSION=$AOSPA_USER_VERSION
     else
-        echo -e "${CLR_BLD_RED} Invalid AOSPA minor version - use any non-negative integer${CLR_RST}"
+        echo -e "${CLR_BLD_RED}Invalid AOSPA version - use any non-negative number${CLR_RST}"
         exit 1
     fi
 fi

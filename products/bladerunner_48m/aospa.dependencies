@@ -1,14 +1,14 @@
 [
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_device_oneplus_oneplus9",
-        "target_path":  "device/oneplus/oneplus9",
+        "repository":   "AOSPA/android_device_realme_bladerunner_48m",
+        "target_path":  "device/realme/bladerunner_48m",
         "revision":     "topaz"
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_device_oneplus_oneplus9pro",
-        "target_path":  "device/oneplus/oneplus9pro",
+        "repository":   "AOSPA/android_device_realme_sm8250-common",
+        "target_path":  "device/realme/sm8250-common",
         "revision":     "topaz"
     },
     {
@@ -21,56 +21,55 @@
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
         "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
-        "revision":     "topaz-888"
+        "revision":     "topaz-865"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_display",
         "target_path":  "hardware/qcom/display",
-        "revision":     "topaz-888"
+        "revision":     "topaz-865"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "revision":     "topaz-888"
+        "revision":     "topaz-legacy-component"
     },
     {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_media",
         "target_path":  "hardware/qcom/media",
-        "revision":     "topaz-888"
+        "revision":     "topaz-865"
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_kernel_oneplus_sm8350",
-        "target_path":  "kernel/msm-5.4",
+        "repository":   "AOSPA/android_kernel_realme_sm8250",
+        "target_path":  "kernel/msm-4.19",
         "revision":     "topaz"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_vendor_nxp_opensource_halimpl",
-        "target_path":  "vendor/nxp/opensource/halimpl",
-        "revision":     "topaz-SN100X-legacy"
+        "remote":       "clo-la",
+        "repository":   "platform/hardware/nxp/nfc",
+        "target_path":  "hardware/nxp/nfc",
+        "revision":     "refs/tags/LA.QSSI.13.0.r1-09400-qssi.0"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_vendor_nxp_opensource_hidlimpl",
-        "target_path":  "vendor/nxp/opensource/hidlimpl",
-        "revision":     "topaz-SN100X-legacy"
+        "remote":       "clo-la",
+        "repository":   "platform/hardware/nxp/secure_element",
+        "target_path":  "hardware/nxp/secure_element",
+        "revision":     "refs/tags/LA.QSSI.13.0.r1-09400-qssi.0"
     },
     {
         "remote":       "blobs",
-        "repository":   "proprietary_vendor_oneplus",
-        "target_path":  "vendor/oneplus",
-        "revision":     "topaz",
-        "clone-depth":  "1"
+        "repository":   "proprietary_vendor_realme",
+        "target_path":  "vendor/realme",
+        "revision":     "topaz"
     },
     {
         "remote":       "blobs-gitlab",
-        "repository":   "proprietary_vendor_oneplus_firmware",
-        "target_path":  "vendor/oneplus/firmware",
-        "revision":     "topaz",
+        "repository":   "android_prebuilts_clang-standalone",
+        "target_path":  "prebuilts/clang-standalone",
+        "revision":     "17",
         "clone-depth":  "1"
     }
 ]

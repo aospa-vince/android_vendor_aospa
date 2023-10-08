@@ -7,8 +7,26 @@
     },
     {
         "remote":       "aospa",
-        "repository":   "AOSPA/android_device_xiaomi_spes-kernel",
-        "target_path":  "device/xiaomi/spes-kernel",
+        "repository":   "AOSPA/android_device_xiaomi_sm6225-common",
+        "target_path":  "device/xiaomi/sm6225-common",
+        "revision":     "topaz"
+    },
+    {
+        "remote":       "aospa",
+        "repository":   "AOSPA/android_device_xiaomi_sm6225-common-miuicamera",
+        "target_path":  "device/xiaomi/sm6225-common-miuicamera",
+        "revision":     "topaz"
+    },
+    {
+        "remote":       "aospa",
+        "repository":   "AOSPA/android_device_xiaomi_sepolicy",
+        "target_path":  "device/xiaomi/sepolicy",
+        "revision":     "topaz"
+    },
+    {
+        "remote":       "aospa",
+        "repository":   "AOSPA/android_kernel_xiaomi_sm6225",
+        "target_path":  "kernel/xiaomi/sm6225",
         "revision":     "topaz"
     },
     {
@@ -18,10 +36,17 @@
         "revision":     "topaz"
     },
     {
+        "remote":       "blobs-gitlab",
+        "repository":   "android_vendor_xiaomi_sm6225-commmon-miuicamera",
+        "target_path":  "vendor/xiaomi/sm6225-common-miuicamera",
+        "revision":     "topaz",
+        "clone-depth":  "1"
+    },
+    {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
         "target_path":  "vendor/qcom/opensource/audio-hal/primary-hal",
-        "revision":     "topaz-888"
+        "revision":     "topaz-bengal"
     },
     {
         "remote":       "aospa",
@@ -33,7 +58,7 @@
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "revision":     "topaz-865"
+        "revision":     "topaz-legacy-component"
     },
     {
         "remote":       "aospa",

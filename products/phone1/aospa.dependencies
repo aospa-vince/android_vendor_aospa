@@ -21,7 +21,7 @@
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "revision":     "topaz-888"
+        "revision":     "topaz-legacy-component"
     },
     {
         "remote":       "aospa",
@@ -39,13 +39,22 @@
         "remote":       "blobs",
         "repository":   "proprietary_vendor_nothing",
         "target_path":  "vendor/nothing",
-        "revision":     "topaz"
+        "revision":     "topaz",
+        "clone-depth":  "1"
     },
     {
         "remote":       "blobs-gitlab",
         "repository":   "proprietary_vendor_nothing_camera",
         "target_path":  "vendor/nothing/camera",
-        "revision":     "topaz"
+        "revision":     "topaz",
+        "clone-depth":  "1"
+    },
+    {
+        "remote":       "blobs-gitlab",
+        "repository":   "proprietary_vendor_nothing_firmware",
+        "target_path":  "vendor/nothing/firmware",
+        "revision":     "topaz",
+        "clone-depth":  "1"
     },
     {
         "remote":       "aospa",

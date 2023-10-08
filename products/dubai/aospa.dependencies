@@ -27,7 +27,7 @@
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_gps",
         "target_path":  "hardware/qcom/gps",
-        "revision":     "topaz-888"
+        "revision":     "topaz-legacy-component"
     },
     {
         "remote":       "aospa",
@@ -45,6 +45,19 @@
         "remote":       "blobs",
         "repository":   "proprietary_vendor_motorola",
         "target_path":  "vendor/motorola",
+        "revision":     "topaz"
+    },
+    {
+        "remote":       "blobs-gitlab",
+        "repository":   "android_prebuilts_clang-standalone",
+        "target_path":  "prebuilts/clang-standalone",
+        "revision":     "17",
+        "clone-depth":  "1"
+    },
+    {
+        "remote":       "blobs-gitlab",
+        "repository":   "proprietary_vendor_motorola_firmware",
+        "target_path":  "vendor/motorola/firmware",
         "revision":     "topaz"
     }
 ]

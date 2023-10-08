@@ -18,6 +18,23 @@ needs_camera_boottime {
 }
 
 soong_config_module_type {
+    name: "powershare_node",
+    module_type: "cc_defaults",
+    config_namespace: "aospaGlobalVars",
+    value_variables: ["powershare_node"],
+    properties: ["cppflags"],
+}
+
+powershare_node {
+    name: "powershare_node_defaults",
+    soong_config_variables: {
+        powershare_node: {
+            cppflags: ["-DPOWERSHARE_NODE=\"%s\""],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "target_process_sdk_version_overrides",
     module_type: "cc_defaults",
     config_namespace: "aospaGlobalVars",
@@ -118,6 +135,22 @@ uses_nothing_camera {
     soong_config_variables: {
         uses_nothing_camera: {
             cppflags: ["-DUSES_NOTHING_CAMERA"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "uses_miui_camera",
+    module_type: "cc_defaults",
+    config_namespace: "aospaGlobalVars",
+    bool_variables: ["uses_miui_camera"],
+    properties: ["cppflags"],
+}
+uses_miui_camera {
+    name: "uses_miui_camera_defaults",
+    soong_config_variables: {
+        uses_miui_camera: {
+            cppflags: ["-DUSES_MIUI_CAMERA"],
         },
     },
 }
